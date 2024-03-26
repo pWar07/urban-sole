@@ -39,7 +39,7 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 9;
-  display: none;
+  /* display: none; */
 }
 
 #loader video {
