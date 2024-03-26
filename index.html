@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./media/favicon/2-removebg-preview.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>UrbanSole</title>
+</head>
+
+<body>
+  <div id="loader">
+    <div id="yellow1"></div>
+    <div id="yellow2"></div>
+    <video autoplay muted loop src="./media/bg.mp4"></video>
+    <h1>UrbanSole</h1>
+    <h3>The Shoe Store</h3>
+  </div>
+  <div id="header">
+    <div id="nav">
+      <img class="logo" src="./media/img1.png" alt="" />
+      <div class="cont">
+        <div class="left">
+          <p onclick="subMenu()">Categories</p>
+          <p>Profile</p>
+          <p>Cart</p>
+        </div>
+        <div class="right">
+          <input id="search" type="text" placeholder="Search" />
+          <p onclick="searchBar()">Search</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <img src="./media/bg-img1.jpeg" alt="" />
+    <div id="page1" data-scroll data-scroll-speed="-2.5">
+      <h1>UrbanSole</h1>
+      <h3>The Shoe Store</h3>
+      <div class="bottom">
+        <div class="social">
+          <h4 class="link"><a href="https://www.instagram.com/">Instagram</a></h4>
+        </div>
+        <h5><i class="ri-arrow-down-wide-line"></i></h5>
+        <div class="social">
+          <h4 class="link"><a href="https://www.facebook.com/">Facebook</a></h4>
+        </div>
+      </div>
+    </div>
+    <div id="page2" data-scroll data-scroll-speed="1">
+      <div class="title1">
+        <h1>New</h1>
+        <h2>Arrival</h2>
+      </div>
+      <div class="cont1">
+        <div class="left">
+          <h1>PUMA X BMW M MOTORSPORT</h1>
+          <img src="./media/pumaxbmw.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="box1">
+            <h1>
+              Nike Air <br />
+              Max DN
+            </h1>
+            <img src="./media/nike-airmax.png" alt="" />
+          </div>
+          <div class="box2">
+            <h1>
+              Adidas <br />
+              YEEZY
+            </h1>
+            <img src="./media/adidas-yeezy.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page3" data-scroll>
+      <div class="title2">
+        <h1>Popular</h1>
+        <h2>Collection</h2>
+      </div>
+      <div class="nav-btns">
+        <div class="left-btn">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="right-btn">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="img-cont">
+            <img class="img1" src="./media/card11.jpg" alt="" />
+            <img class="img2" src="./media/card12.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h5>Converse</h5>
+            <h3>CHUCK 70 LOW BLACK</h3>
+            <h3>₹ 5,999.00</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-cont">
+            <img class="img1" src="./media/card21.jpg" alt="" />
+            <img class="img2" src="./media/card22.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h5>Adidas</h5>
+            <h3>CRAZY IIINFINITY 'WONDER GOLD/CORE BLACK/GREY SIX'</h3>
+            <h3>₹ 15,999.00</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-cont">
+            <img class="img1" src="./media/card31.jpg" alt="" />
+            <img class="img2" src="./media/card32.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h5>Jordan</h5>
+            <h3>AIR JORDAN 6 RETRO 'WHITE/YELLOW OCHRE-BLACK'</h3>
+            <h3>₹ 18,395.00</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-cont">
+            <img class="img1" src="./media/card41.jpg" alt="" />
+            <img class="img2" src="./media/card42.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h5>Jordan</h5>
+            <h3>
+              WMN'S AIR JORDAN 1 BROOKLYN 'LEGEND MD BROWN/LT OREWOOD BRN'
+            </h3>
+            <h3>₹ 15,295.00</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------TEST------------ -->
+    <div id="wrapper">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card11.jpg" alt="" class="card-img1">
+                  <img src="./media/card12.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Converse</h2>
+                <p class="description">CHUCK 70 LOW BLACK</p>
+                <p class="price">₹ 5,999.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card21.jpg" alt="" class="card-img1">
+                  <img src="./media/card22.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Adidas</h2>
+                <p class="description">CRAZY IIINFINITY 'WONDER GOLD/CORE BLACK/GREY SIX'</p>
+                <p class="price">₹ 15,999.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card31.jpg" alt="" class="card-img1">
+                  <img src="./media/card32.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Jordan</h2>
+                <p class="description">AIR JORDAN 6 RETRO 'WHITE/YELLOW OCHRE-BLACK'</p>
+                <p class="price">₹ 18,395.000</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card41.jpg" alt="" class="card-img1">
+                  <img src="./media/card42.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Jordan</h2>
+                <p class="description">WMN'S AIR JORDAN 1 BROOKLYN 'LEGEND MD BROWN/LT OREWOOD BRN'</p>
+                <p class="price">₹ 15,295.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card51.jpg" alt="" class="card-img1">
+                  <img src="./media/card52.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Jordan</h2>
+                <p class="description">AIR JORDAN 9 RETRO 'SUMMIT WHITE/BLACK-DK POWDER BLUE'</p>
+                <p class="price">₹ 19,295.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card61.jpg" alt="" class="card-img1">
+                  <img src="./media/card62.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">New Balance</h2>
+                <p class="description">BB550 SEA SALT 'WHITE'</p>
+                <p class="price">₹ 12,999.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card71.jpg" alt="" class="card-img1">
+                  <img src="./media/card72.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Nike</h2>
+                <p class="description">AIR MAX 90 GORE-TEX 'DK SMOKE GREY/SUMMIT WHITE-COOL GREY'</p>
+                <p class="price">₹ 14,995.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card81.jpg" alt="" class="card-img1">
+                  <img src="./media/card82.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Asics</h2>
+                <p class="description">JAPAN S ST 'WHITE/DIGITAL VIOLET'</p>
+                <p class="price">₹ 6,999.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="./media/card91.jpg" alt="" class="card-img1">
+                  <img src="./media/card92.jpg" alt="" class="card-img2">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Puma</h2>
+                <p class="description">THE SMURFS RS-X 'TEAM LIGHT BLUE/RED'</p>
+                <p class="price">₹ 11,999.00</p>
+
+                <button class="button">View More</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="swiper-button-prev swiper-navBtn"><i class="ri-arrow-left-s-line"></i></div>
+        <div class="swiper-button-next swiper-navBtn"><i class="ri-arrow-right-s-line"></i></div>
+
+        <!-- <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div> -->
+        <div class="swiper-pagination"></div>
+
+
+      </div>
+    </div>
+
+    <!-- --------------TEST ENDS------------- -->
+
+    <div id="page4" data-scroll>
+      <div class="title">
+        <h1>Shop Shoes</h1>
+        <h2>by brand</h2>
+      </div>
+      <div class="img-container">
+        <div class="line">
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/nike-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>NIKE</p> -->
+            </div>
+            <img src="./media/nike1.jpeg" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/woodland-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>Woodland</p> -->
+            </div>
+            <img src="./media/woodland1.jpeg" alt="" />
+          </div>
+          <div class="img-div" style="object-position: top">
+            <div class="overlay">
+              <img src="./media/skechers-logo.png" alt="" style="filter: brightness(0) invert(1)" />
+              <!-- <p>Skechers</p> -->
+            </div>
+            <img src="./media/skechers1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="line">
+          <div class="img-div" style="object-position: left">
+            <div class="overlay">
+              <img src="./media/redchief-logo.png" alt="" />
+              <!-- <p>Redchief</p> -->
+            </div>
+            <img src="./media/redchief1.jpeg" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/bata-logo.png" alt="" style="filter: brightness(0) invert(1)" />
+              <!-- <p>bata</p> -->
+            </div>
+            <img src="./media/bata1.webp" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/redtape-logo.png" alt="" style="filter: brightness(0) invert(1)" />
+              <!-- <p>redtape</p> -->
+            </div>
+            <img src="./media/redtape1.webp" alt="" />
+          </div>
+        </div>
+        <div class="line">
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/puma-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>puma</p> -->
+            </div>
+            <img src="./media/puma1.jpeg" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/adidas-logo.png" alt="" />
+              <!-- <p>adidas</p> -->
+            </div>
+            <img src="./media/adidas1.webp" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/nb-logo.png" alt="" style="filter: brightness(0) invert(1)" />
+              <!-- <p>new balance</p> -->
+            </div>
+            <img src="./media/nb1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="line">
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/reebok-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>reebok</p> -->
+            </div>
+            <img src="./media/reebok1.jpeg" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/converse-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>converse</p> -->
+            </div>
+            <img src="./media/converse1.jpeg" alt="" />
+          </div>
+          <div class="img-div">
+            <div class="overlay">
+              <img src="./media/jordan-logo.png" alt="" style="filter: grayscale(1) invert(1)" />
+              <!-- <p>jordan</p> -->
+            </div>
+            <img src="./media/jordan1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="upper">
+        <div class="col1">
+          <p class="foot-title">INFO</p>
+          <p>Contact Us</p>
+          <p>Release</p>
+          <p>Stores</p>
+          <p>Brands</p>
+        </div>
+        <div class="col2">
+          <p class="foot-title">POLICIES</p>
+          <p>Help Center</p>
+          <p>Privacy Policy</p>
+          <p>Returns & Exchange</p>
+          <p>Terms & Conditions</p>
+          <p>Order & Shipping</p>
+          <p>Terms of Service</p>
+        </div>
+        <div class="col3">
+          <p class="foot-title">OUR SOCIALS</p>
+          <div class="foot-icons">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-box-fill"></i>
+          </div>
+        </div>
+        <div class="col4">
+          <p class="foot-title">SUBSCRIBE TO OUR NEWSLETTER</p>
+          <div class="sub-cont">
+            <input type="text" placeholder="Email Address" />
+            <input class="foot-btn" type="button" value="Subscribe" />
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <p>secured checkout with:</p>
+        <div class="cont-pay">
+          <img src="./media/payments/amazon.svg" alt="">
+          <img src="./media/payments/american-express.svg" alt="">
+          <img src="./media/payments/discover.svg" alt="">
+          <img src="./media/payments/mastercard.svg" alt="">
+          <img src="./media/payments/mobikwik.svg" alt="">
+          <img src="./media/payments/paytm.svg" alt="">
+          <img src="./media/payments/rupay.svg" alt="">
+          <img src="./media/payments/visa.svg" alt="">
+        </div>
+
+        <div class="last">
+          <p>© 2024, <span class="btm"><a href="#">UrbanSole</a></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
