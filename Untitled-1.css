@@ -1,0 +1,135 @@
+#page3 {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  padding: 3vw 3vw;
+  margin-bottom: 5vh;
+  display: none;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+#page3 .title2 {
+  height: auto;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+#page3 .title2 h1 {
+  color: #292929;
+  font-size: 7vh;
+  letter-spacing: 1px;
+  font-family: mona;
+}
+
+#page3 .title2 h2 {
+  font-size: 4vh;
+  color: red;
+  letter-spacing: 1px;
+  margin-left: 1vw;
+  font-family: silence;
+  /* text-align: right; */
+}
+
+#page3 .nav-btns {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  padding: 3vw;
+  /* background-color: #000; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page3 .nav-btns div {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3 .nav-btns div:hover {
+  cursor: pointer;
+}
+
+#page3 .nav-btns div:hover i {
+  scale: 1.2;
+}
+
+#page3 .nav-btns div i {
+  font-size: 20px;
+  transition: all ease 1;
+}
+
+#page3 .card-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  /* background-color: #292929; */
+}
+
+#page3 .card-container .info {
+  font-family: "Anek Latin", sans-serif;
+  text-align: center;
+}
+
+#page3 .card-container .info h5 {
+  margin: 2vh 0;
+  font-weight: 400;
+  color: #7e7fa8;
+}
+
+#page3 .card-container .info h3 {
+  margin-bottom: 1.5vh;
+}
+
+#page3 .card-container .card {
+  position: relative;
+  height: 100%;
+  width: 22vw;
+  padding: 1vw;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+}
+
+.card .img-cont {
+  position: relative;
+  width: 100%;
+  min-height: 75%;
+  overflow: hidden;
+}
+
+.card .img-cont:hover {
+  cursor: pointer;
+}
+
+.card .img-cont:hover .img2 {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.card .img-cont img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5 linear;
+}
+
+.card .img-cont .img2 {
+  opacity: 0;
+  transition: all 0.2s linear;
+}

@@ -39,7 +39,7 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 9;
-  display: none;
+  /* display: none; */
 }
 
 #loader video {
@@ -110,7 +110,8 @@ body {
   height: 10vh;
   width: 95%;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.25);
+  /* background: rgba(255, 255, 255, 0.25); */
+  background-color: #f8f8ff;
   box-shadow: 0 1px 10px 1px rgba(147, 151, 189, 0.37);
   backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -151,7 +152,7 @@ body {
 
 #nav .cont .left p {
   color: #292929;
-  font-size: 2vh;
+  font-size: 2.2vh;
   font-weight: 800;
   margin-right: 2vw;
 }
@@ -172,11 +173,16 @@ body {
   /* background-color: white; */
 }
 
+#nav .cont .right .searchBtn {
+  margin-right: 2vw;
+}
+
 #nav .cont .right #search {
   display: none;
   border-radius: 50px;
   border: none;
   font-size: 2vh;
+
   padding: 1vh 2vw;
   margin-right: 2vw;
   transition: 2s ease-in linear;
@@ -188,7 +194,7 @@ body {
 
 #nav .cont .right p {
   color: #292929;
-  font-size: 2vh;
+  font-size: 2.2vh;
   font-weight: 800;
   /* margin-right: 2vw; */
 }
