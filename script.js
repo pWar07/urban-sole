@@ -56,9 +56,9 @@ var y = 0;
 function subMenu() {
   y++;
   if (y % 2 == 1) {
-    document.getElementById("sub-header").style = "display: block";
+    document.getElementById("subHeader").style = "display: block";
   } else {
-    document.getElementById("sub-header").style = "display: none";
+    document.getElementById("subHeader").style = "display: none";
   }
 }
 
