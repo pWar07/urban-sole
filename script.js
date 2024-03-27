@@ -69,10 +69,12 @@ var swiper = new Swiper(".slide-content", {
   loop: true,
   centerSlide: true,
   fade: true,
+  cssMode: true,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    mousewheel: true,
     dynamicBullets: true,
   },
   navigation: {
