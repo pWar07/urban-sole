@@ -7,6 +7,34 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.backBtn {
+  position: absolute;
+  top: 4vh;
+  left: 3vw;
+  height: 6vh;
+  width: 6vw;
+  padding: 0 1.5vh;
+  border-radius: 70px;
+  background-color: #b09999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.3vh;
+  cursor: pointer;
+  color: #292929;
+  z-index: 9;
+}
+
+.backBtn p {
+  font-family: inerta;
+}
+
+#mainLogin {
   position: relative;
   min-height: 100vh;
   background-color: #e1e8ee;
@@ -17,10 +45,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-}
-
-.backBtn {
-  position: absolute;
 }
 
 .form-structor {

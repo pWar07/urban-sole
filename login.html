@@ -4,29 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
-    <link rel="shortcut icon" href="./media/favicon/2-removebg-preview.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./media/favicon/2-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Join Us</title>
   </head>
   <body>
-    <div class="backBtn"></div>
-    <div class="form-structor">
-      <div class="signup">
-        <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
-        <div class="form-holder">
-          <input type="text" class="input" placeholder="Name" />
-          <input type="email" class="input" placeholder="Email" />
-          <input type="password" class="input" placeholder="Password" />
-        </div>
-        <button class="submit-btn">Sign up</button>
+    <a href="./index.html">
+      <div class="backBtn">
+        <i class="ri-arrow-left-s-line"></i>
+        <p>|</p>
+        <p>Back</p>
       </div>
-      <div class="login slide-up">
-        <div class="center">
-          <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+    </a>
+    <div id="mainLogin">
+      <div class="form-structor">
+        <div class="signup">
+          <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
           <div class="form-holder">
+            <input type="text" class="input" placeholder="Name" />
             <input type="email" class="input" placeholder="Email" />
             <input type="password" class="input" placeholder="Password" />
           </div>
-          <button class="submit-btn">Log in</button>
+          <button class="submit-btn">Sign up</button>
+        </div>
+        <div class="login slide-up">
+          <div class="center">
+            <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+            <div class="form-holder">
+              <input type="email" class="input" placeholder="Email" />
+              <input type="password" class="input" placeholder="Password" />
+            </div>
+            <button class="submit-btn">Log in</button>
+          </div>
         </div>
       </div>
     </div>

@@ -39,7 +39,7 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 9;
-  /* display: none; */
+  display: none;
 }
 
 #loader video {
@@ -129,6 +129,11 @@ body {
   width: 100%;
   padding: 0 3.5vw;
   z-index: -1;
+}
+
+#nav .cont p > a {
+  text-decoration: none;
+  color: #292929;
 }
 
 #nav .cont p:hover {
